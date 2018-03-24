@@ -7,6 +7,13 @@
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let data of historial; let i = index" (click)="abrirScan(i)">
+      {{data.info}}
+      <p>
+        {{data.tipo}}
+      </p>
+    </button>
+  </ion-list>  
 </ion-content>
