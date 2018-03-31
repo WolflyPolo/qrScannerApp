@@ -9,7 +9,7 @@ import {TabsPage, MapaPage } from '../pages/index.paginas';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = MapaPage;
+  rootPage:any = TabsPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

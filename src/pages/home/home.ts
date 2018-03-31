@@ -25,7 +25,17 @@ export class HomePage {
     console.log("Realizando Scan");
 
     if (!this.platform.is('cordova')) { //Cordova isn't present.
-      this.historialService.agregarHistorial("http://google.com");
+    // this.historialService.agregarHistorial("geo: 9.94959, -94.854884");
+    this.historialService.agregarHistorial( `BEGIN:VCARD
+VERSION:2.1
+N:Kent;Clark
+FN:Clark Kent
+ORG:
+TEL;HOME;VOICE:12345
+TEL;TYPE=cell:67890
+ADR;TYPE=work:;;;
+EMAIL:clark@superman.com
+END:VCARD` );
       return;
     }
 
